@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    .logout-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Full viewport height */
+        background-color: #f8f9fa; /* Light background color */
+    }
+
+    .logout-text {
+        text-align: center;
+        margin-bottom: 20px; /* Space below the text */
+    }
+
+    .logout-text h1 {
+        font-size: 3rem; /* Increase font size */
+        font-weight: bold; /* Bold font */
+        color: #343a40; /* Dark color */
+    }
+
+    .login-button {
+        padding: 10px 20px; /* Add padding */
+        font-size: 1.5rem; /* Increase button font size */
+    }
+</style>
+
+<div class="logout-container">
+    <div class="logout-text">
+        <h1 class="fs-3">Hope to see you soon</h1>
+        <a href="{% url 'login' %}" class="btn btn-danger login-button">Login</a> <!-- Login button with URL -->
+    </div>
+</div>
+
+{% endblock %}

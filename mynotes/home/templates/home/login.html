@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    /* Center the login form vertically and horizontally */
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Full viewport height for vertical centering */
+        background-color: #f8f9fa; /* Light background color */
+    }
+
+    /* Card styling */
+    .login-card {
+        width: 100%;
+        max-width: 600px; /* Increased max width */
+        padding: 20px; /* Add padding to the card */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly larger shadow for depth */
+        border-radius: 8px; /* Rounded corners for a softer look */
+    }
+
+    /* Header styling */
+    .login-card .card-header {
+        background-color: #343a40; /* Dark background for header */
+        color: white; /* White text */
+        font-size: 1.75rem; /* Larger font size */
+        text-align: center; /* Center the text */
+        padding: 15px; /* Additional padding for the header */
+    }
+
+    /* Form button styling */
+    .btn-success {
+        width: 100%; /* Full width button */
+        padding: 12px; /* More padding for better appearance */
+        font-size: 1.1rem; /* Slightly larger font for button */
+    }
+
+    /* Form input styling */
+    .form-control {
+        margin-bottom: 15px; /* Space between inputs */
+        padding: 10px; /* Padding for input fields */
+        font-size: 1rem; /* Larger font for input fields */
+    }
+</style>
+
+<div class="login-container">
+    <div class="card login-card">
+        <div class="card-header">
+            Login
+        </div>
+        <div class="card-body">
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" class="btn btn-success" value="Login">
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

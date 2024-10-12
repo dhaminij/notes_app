@@ -1,0 +1,45 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Django specific
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+db.sqlite3
+/media
+/staticfiles
+*.log
+.env
+
+# Virtual environment
+env/
+venv/
+ENV/
+venv.bak/
+.env/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Docker
+*.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Misc
+*.coverage
+coverage.xml
+*.cover
+*.egg-info/
+dist/
+build/
