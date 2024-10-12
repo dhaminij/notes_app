@@ -8,8 +8,7 @@ This is a simple web application built using Django that allows users to create,
 - [Technologies Used](#technologies-used)
 - [Setup Instructions](#setup-instructions)
 - [Docker Setup](#docker-setup)
-- [Usage](#usage)
-- [License](#license)
+
 
 ## Features
 
