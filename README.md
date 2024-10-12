@@ -32,7 +32,7 @@ This is a simple web application built using Django that allows users to create,
 - Python 3.6 or higher
 - pip (Python package installer)
 - Git
-- Docker (if using Docker setup)
+- Docker 
 
 ### Local Setup
 
