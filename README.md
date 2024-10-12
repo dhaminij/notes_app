@@ -24,7 +24,6 @@ This is a simple web application built using Django that allows users to create,
 - **HTML/CSS**: For frontend development.
 - **Bootstrap**: For responsive UI design.
 - **Docker**: For containerization of the application.
-- **PostgreSQL/MySQL**: For database management (if applicable).
 
 ## Setup Instructions
 
