@@ -41,4 +41,4 @@ This is a simple web application built using Django that allows users to create,
 1. **Clone the Repository:**
    Open your terminal and run:
    ```bash
-   git clone <YOUR_REPOSITORY_URL>
+   git clone https://github.com/dhaminij/notes_app.git
