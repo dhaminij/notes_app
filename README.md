@@ -61,8 +61,10 @@ This is a simple web application built using Django that allows users to create,
    http://localhost:8000/
 4. **Stopping the Container:**
    docker stop <container-id>
-   find the container ID by listing all running containers:
-   docker ps
+
+   
+   (find the container ID by listing all running containers:
+   docker ps)
 
 
 
