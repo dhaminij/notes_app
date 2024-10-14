@@ -40,3 +40,31 @@ This is a simple web application built using Django that allows users to create,
    Open your terminal and run:
    ```bash
    git clone https://github.com/dhaminij/notes_app.git
+2. **Create a Virtual Environment**
+      python -m venv env
+3. **Activate the Virtual Environment**
+   .\env\Scripts\activate
+4. **Install Dependencies**
+      pip install -r requirements.txt
+5. **Apply Migrations**
+      python manage.py migrate
+6. **Run the Application**
+   python manage.py runserver
+
+ ### Docker Setup
+
+1. **Build the Docker Image:**
+   docker build -t mynotes-app .
+2. **Run the Docker Container:**
+     docker run -d -p 8000:8000 mynotes-app
+3. **Access the Application:**
+   http://localhost:8000/
+4. **Stopping the Container:**
+   docker stop <container-id>
+   find the container ID by listing all running containers:
+   docker ps
+
+
+
+   
+   
